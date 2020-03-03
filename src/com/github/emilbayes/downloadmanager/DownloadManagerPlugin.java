@@ -328,7 +328,9 @@ public class DownloadManagerPlugin extends CordovaPlugin {
             downloads = mResolver.query(uri, projection, selection, selectionArgs, orderBy);
         }
 
-        callbackContext.success(JSONFromCursor(downloads));
+        if(downloads.getCount() > 0) {
+            callbackContext.success(JSONFromCursor(downloads));
+        }
 
         if (downloads != null) {
             downloads.close();
