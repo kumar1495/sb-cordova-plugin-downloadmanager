@@ -450,7 +450,6 @@ public class DownloadManagerPlugin extends CordovaPlugin {
             mLastTime = currentTime;
 
             long totalBytes = usedRxBytes + usedTxBytes;
-            Log.e("Total Bytes::", totalBytes + "");
             double totalSpeed = 0;
             if (usedTime > 0) {
                 totalSpeed = (double) totalBytes / usedTime;
