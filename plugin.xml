@@ -18,7 +18,7 @@
   </platform>
   <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="sbutility">
+            <feature name="DownloadManagerPlugin">
                 <param name="ios-package" value="DownloadManagerPlugin" />
             </feature>
         </config-file>
