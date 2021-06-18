@@ -16,4 +16,12 @@
       </feature>
     </config-file>
   </platform>
+  <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="sbutility">
+                <param name="ios-package" value="DownloadManagerPlugin" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/DownloadManagerPlugin.swift" />
+    </platform>
 </plugin>
