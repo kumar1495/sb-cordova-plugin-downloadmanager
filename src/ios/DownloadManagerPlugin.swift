@@ -1,6 +1,6 @@
     
     import Foundation
-    import MZDownloadManager
+    // import MZDownloadManager
     
     struct RequestObject: Codable {
         let uri, description, title, mimeType: String

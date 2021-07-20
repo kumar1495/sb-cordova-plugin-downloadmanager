@@ -23,17 +23,9 @@
          </feature>
       </config-file>
       <source-file src="src/ios/DownloadManagerPlugin.swift" />
-      
-      <!-- <framework src="MZDownloadManager" type="podspec" spec="3.7.0"/> -->
-
-      <podspec>
-         <config>
-            <source url="https://github.com/mzeeshanid/MZDownloadManager.git" />
-         </config>
-         <pods use-frameworks="true">
-            <pod name="MZDownloadManager" spec="3.7.0" />
-         </pods>
-      </podspec>
+      <source-file src="src/ios/DownloadManager/MZDownloadManager.swift"></source-file>
+      <source-file src="src/ios/DownloadManager/MZDownloadModel.swift"></source-file>
+      <source-file src="src/ios/DownloadManager/MZUtility.swift"></source-file>
 
    </platform>
 </plugin>
