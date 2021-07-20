@@ -17,19 +17,23 @@
       </config-file>
    </platform>
    <platform name="ios">
-      <podspec>
-         <config>
-            <source url="https://github.com/mzeeshanid/MZDownloadManager.git" />
-         </config>
-         <pods use-frameworks="true">
-            <pod name="MZDownloadManager" />
-         </pods>
-      </podspec>
       <config-file target="config.xml" parent="/*">
          <feature name="DownloadManagerPlugin">
             <param name="ios-package" value="DownloadManagerPlugin" />
          </feature>
       </config-file>
       <source-file src="src/ios/DownloadManagerPlugin.swift" />
+      
+      <!-- <framework src="MZDownloadManager" type="podspec" spec="3.7.0"/> -->
+
+      <podspec>
+         <config>
+            <source url="https://github.com/mzeeshanid/MZDownloadManager.git" />
+         </config>
+         <pods use-frameworks="true">
+            <pod name="MZDownloadManager" spec="3.7.0" />
+         </pods>
+      </podspec>
+
    </platform>
 </plugin>
